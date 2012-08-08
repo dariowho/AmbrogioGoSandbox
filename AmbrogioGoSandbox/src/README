@@ -25,3 +25,9 @@ P.S. sono stato particolarmente attento a catturare (non ancora a gestire)
      tutti i possibili errori che possono essere restituiti dalle varie funzioni
      e ho creato dei messaggi di errore da inviare via socket per quanto riguarda
      errori di "protocollo", che essendo stato creato non ne ha di default.
+
+P.P.S. per testare il tutto aprite due terminali nella directory src e poi lanciate
+       su uno:
+               $ go run file_be.go
+       sull'altro:
+               $ go run generic_client.go
