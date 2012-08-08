@@ -1,0 +1,7 @@
+In caso qualcuno volesse aggiungere un proprio backend
+basta che aggiunga il file myBE_specs.go con il socket
+e le varie funzioni esportate alla cartella protocol.
+
+A quel punto tutti i frontend potranno avere a disposizione
+le funzioni esportate ed effettuare la richiesta tramite un
+SocketMsg standard a patto di importare il pkg protocol.

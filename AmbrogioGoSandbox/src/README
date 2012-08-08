@@ -1,0 +1,27 @@
+CONTENUTO:
+
+1) file_be.go
+   è il sorgente di un possibile backend che (per ora) fa solo
+   il listing del contenuto di una qualsiasi cartella passata come
+   argomento in una richiesta
+2) generic_client.go
+   è il sorgente di un client che mi serve soprattutto da debugger:
+   manda tre richieste, una corretta e due errate ma con due errori
+   diversi
+3) common/handlers.go
+   serve a raccogliere tutte quelle funzioni che potrebbero essere
+   utili a tutti i programmi, per ora funzioni per la gestione degli
+   errori e dei segnali di sistema (per ora solo SIGINT)
+4) protocol/protocol.go
+   contiene tutte le definizioni e le funzioni per creare, modificare,
+   inviare e ricevere richieste standard da frontend a backend
+5) protocol/file_specs.go
+   contiene tutte le definizioni e le funzioni per creare, modificare,
+   inviare e ricevere risposte specifiche da backend a frontend
+6) test_home
+   semplice cartella demo da riempire che funge da test
+
+P.S. sono stato particolarmente attento a catturare (non ancora a gestire)
+     tutti i possibili errori che possono essere restituiti dalle varie funzioni
+     e ho creato dei messaggi di errore da inviare via socket per quanto riguarda
+     errori di "protocollo", che essendo stato creato non ne ha di default.

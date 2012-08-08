@@ -1,0 +1,39 @@
+package protocol
+
+// General informations
+const DEFINITION = 0
+
+// Socket Informations
+const ByBE string = "path/to/socket"
+const MyBEID uint8 = #
+
+// Error messages
+const (
+	ERROR_NAME string = "error string"
+)
+
+// Exported functions
+const (
+    MyBE_f0 uint8 = 0
+)
+
+// Returned data types
+type MyType struct {
+    // ...
+}
+
+// Functions to manage custom data type over a socket connection
+
+/**
+ * Write MyType data to the passed connection
+ */
+func (t *MyType) Send(conn net.Conn) (n int, err error) {
+	return 0, nil
+}
+
+/**
+ * Read MyType data from the passed connection
+ */
+func (t *MyType) Recv(conn net.Conn) (n int, err error) {
+	return 0, nil
+}
